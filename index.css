@@ -130,19 +130,19 @@ footer {
 }
 
 .more-info-row img {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 100%;
 }
 
 .more-info-row .left{
     float: left;
-    margin-left: 15rem;
+    margin-left: 5rem;
 }
 
 .more-info-row .right{
     float: right;
-    margin-right: 15rem;
+    margin-right: 5rem;
 }
 
 .more-info-row p {
@@ -150,6 +150,6 @@ footer {
     max-width: 500px;
     vertical-align: middle;
     display: inline-block;
-    margin: 10rem auto;
+    margin: 7rem auto;
     font-size: 24px;
 }
