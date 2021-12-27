@@ -1,0 +1,155 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* get rid of small line that appears */
+a {
+    text-decoration: none;
+}
+
+#header {
+    margin: 0 auto;
+    display: block;
+}
+
+#more-about-info {
+    background-color: #bcbcbc;
+    margin: 0 auto;
+    padding: 5rem;
+    min-height: 500px;
+}
+
+#intro {
+    margin-top: 5rem;
+}
+
+#intro h1 {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+#intro span {
+    font-weight: 800;
+    font-size: 48px;
+}
+
+#more-about-info, #links {
+    margin-top: 2.5rem;
+}
+
+.intro-wrapper {
+    margin-top: 5rem;
+    line-height: 25px;
+}
+
+
+#intro p {
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    width: 35%;
+    font-size: 24px;
+    line-height: 35px;
+    text-align:center;
+}
+
+#intro h1 {
+    line-height: 0;
+    margin-top: 5rem;
+}
+
+#intro img {
+    width: auto;
+    height: 300px;
+    border-radius: 100%;
+}
+
+footer {
+    background-color: #bcbcbc;
+    line-height: 2rem;
+    padding:20px 0;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    clear:both;
+    font-size: 20px;
+
+}
+
+#link-buttons {
+    display: inline-block;
+}
+
+
+.link-button {
+    font-size: 22px;
+    font-weight: 800;
+    height: 25px;
+    width: 175px;
+    border: solid 1px #090909;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 15px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.link-button a {
+    text-decoration: none;
+}
+
+#links-social .social-circle {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: solid 2px #090909;
+    border-radius: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 5rem 10px;
+}
+
+#links-social .social-circle a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links-social img{
+    height: 25px;
+    width: auto;
+}
+
+.more-info-row {
+    margin: 0 auto;
+    min-height: 450px;
+    width: 85%;
+    padding: 2.5rem 0;
+}
+
+.more-info-row img {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+}
+
+.more-info-row .left{
+    float: left;
+    margin-left: 15rem;
+}
+
+.more-info-row .right{
+    float: right;
+    margin-right: 15rem;
+}
+
+.more-info-row p {
+    min-width: 400px;
+    max-width: 500px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 10rem auto;
+    font-size: 24px;
+}
