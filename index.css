@@ -154,7 +154,8 @@ footer span {
     }
 
     #intro p {
-        width: 35%;
+        width: 70%;
+        max-width: 600px;
     }
     
     
