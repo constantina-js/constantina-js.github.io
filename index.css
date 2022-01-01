@@ -24,8 +24,7 @@ a {
 #intro p {
     margin: 0 auto;
     padding: 1.5rem 0;
-    width: 75%;
-    max-width: 475px;
+    width: 85%;
     font-size: 24px;
     line-height: 35px;
     text-align:center;
@@ -113,7 +112,7 @@ a {
 
 .more-info-row p {
     margin: 3.5rem auto 0 auto;
-    font-size: 18px;
+    font-size: 24px;
     width: 85%;
     max-width: 425px;
 }
@@ -126,7 +125,7 @@ a {
 
 footer {
     background-color: #ffde7c;
-    padding:20px 0;
+    padding: 5rem 5rem 2.5rem 5rem;
     bottom: 0; 
     left: 0; 
     right: 0;
@@ -145,7 +144,7 @@ footer span {
     }
     
     #more-about-info {
-        padding: 5rem;
+        padding: 5rem 5rem 0 5rem;
     }
     
     #intro {
@@ -250,6 +249,5 @@ footer span {
         margin: 7rem auto;
         font-size: 24px;
     }
-    
     
 }
