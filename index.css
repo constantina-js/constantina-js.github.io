@@ -9,6 +9,21 @@ body {
 /* get rid of small line that appears */
 a {
     text-decoration: none;
+    color:#a17ef7;
+}
+
+a:hover {
+    color: #6d589f
+}
+
+#callout {
+    color: #090909;
+    text-decoration: underline;
+
+}
+
+#callout:hover {
+    color:#6d589f;
 }
 
 #intro h1 {
@@ -47,8 +62,8 @@ a {
     display: block;
     margin: 0 auto;
     text-align: center;
+    margin: -1.5rem 0;
 }
-
 
 .link-button {
     font-size: 22px;
@@ -101,8 +116,7 @@ a {
 #more-about-info {
     background-color: #ffde7c;
     margin: 0 auto;
-    min-height: 500px;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .more-info-row {
@@ -125,7 +139,7 @@ a {
 
 footer {
     background-color: #ffde7c;
-    padding: 5rem 5rem 2.5rem 5rem;
+    padding: 3rem 5rem 2.5rem 5rem;
     bottom: 0; 
     left: 0; 
     right: 0;
@@ -158,7 +172,7 @@ footer span {
     }
     
     
-    #more-about-info, #links {
+    #more-about-info {
         margin-top: 2.5rem;
     }
     
@@ -223,22 +237,15 @@ footer span {
         min-height: 450px;
         width: 85%;
         padding: 2.5rem 0 0 0;
+        text-align: center;
     }
     
     .more-info-row img {
         height: 300px;
         width: 300px;
         border-radius: 100%;
-    }
-    
-    .more-info-row .left{
-        float: left;
-        margin-left: 5rem;
-    }
-    
-    .more-info-row .right{
-        float: right;
-        margin-right: 5rem;
+        margin: 0 auto;
+        display: block;
     }
     
     .more-info-row p {
@@ -246,7 +253,7 @@ footer span {
         max-width: 500px;
         vertical-align: middle;
         display: inline-block;
-        margin: 7rem auto;
+        margin: 3rem auto 5rem auto;
         font-size: 24px;
     }
     
