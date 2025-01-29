@@ -1,5 +1,5 @@
 ---
 title: Constantina "Connie" Scoullis
-layout: default
+layout: home
 home: true
 ---
