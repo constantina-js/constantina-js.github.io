@@ -21,21 +21,39 @@
     </head>
     <body>
     
-        {% include header.html %}
+    {% include header.html %}
 
-        <div class="body-wrapper">
+    <div class="body-wrapper">
+        <div class="blog-post">
+            <p class="post-meta">
 
-            <section id="about-me">
+                <h1> {{ page.title }}</h1>
+                <h2> {{ page.tagline }}</h2>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus dui consequat felis pulvinar, sit amet tincidunt tellus aliquam. Mauris ac egestas odio, sed bibendum leo. Fusce ac enim sed leo varius bibendum. Cras fringilla, nunc in vehicula efficitur, felis massa molestie mauris, sit amet interdum tellus erat ac nulla. Nam ultrices condimentum turpis quis placerat. Ut cursus consequat odio, sed semper tortor. Aliquam eget facilisis metus. Ut ligula ante, fermentum eget posuere in, imperdiet ut neque. Suspendisse potenti. Ut aliquet elementum congue. Nulla eu ultrices felis. Aliquam ut pharetra tellus. Nunc sed mi odio. Sed lacinia leo iaculis, fringilla orci in, dictum lorem. Morbi gravida ipsum eget odio lobortis, quis auctor arcu lobortis. Etiam at nisl ligula.
-                </p>
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                    {{ page.date | date: date_format }}
+                </time>
 
-
-            </section>
+            </p>    
+            <div class="post-tags">
+                {% for tag in site.tags %}
+                    <h3 class="tag"> <a href="{{ post.url }}">#{{ tag[0] }}</a></h3>
+                {% endfor %}
+            </div>
+            <div class="break"></div>
+            
+            {{ content }}
 
         </div>
 
+        <div class="break"></div>
+
+        <div class="blog-nav">
+
+        </div>
+    </div>
+        
     </body>
 
 {% include footer.html %}

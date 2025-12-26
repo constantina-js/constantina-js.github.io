@@ -1,5 +1,12 @@
 
+html, body {
+    height: 100%;
+}
+
 body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -10,11 +17,13 @@ body {
 
 body.dark-mode {
     background-color: #442255;
+    color: #ffddaa;
 }
 
 .body-wrapper {
     width: 740px;
     margin: 0 auto;
+    flex: 1; /* THIS is the magic */
 }
 
 header {
@@ -29,6 +38,11 @@ header .header-section {
     margin: 5rem 0 2.5rem 0;
     display: inline-block;
     align-items: center; 
+}
+
+.header-section::after {
+    display: block;
+    clear: both;
 }
 
 .header-section #propic-area {
@@ -137,32 +151,52 @@ input:checked + .slider:before {
 }
 
 
-#about-me {
+#about-me, .blog-post {
     margin: 0 auto;
     align-items: center;
     width: 100%;
 }
 
-#about-me p {
+.blog-post {
+    text-align: justify;
+    margin-top: 5rem;
+}
+
+#about-me p, .blog-post p {
     display: block;
     text-align: justify;
     font-size: 20px;
 }
 
+.break {
+    width: 75%;
+    border: solid 1px #090909;
+    margin: 3.5rem auto;
+}
 
+.post-tags h3{
+    display: inline-block;
+}
+
+.blog-post .tag {
+    height: 100%;
+    border: solid 1px #090909;
+    padding: 3px;
+    border-radius: 5px;
+}
 
 footer {
+    width:100%;
     bottom: 0; 
     left: 0; 
     right: 0;
     clear:both;
-    margin-top: 5rem;
+    min-height: 50px;
+    align-items: center; 
+    position: relative;
+    padding-top:5rem;
 }
 
-footer span {
-    width: 740px;
-    margin: 0 auto;
-}
 
 @media (min-width: 360px) and (min-width: 360px) {
 }
