@@ -14,7 +14,12 @@
         <meta property="og:image" content="img/0.png" />
         <meta property="og:url" content="http://constantina-js.github.io" />
         <meta property="og:site_name" content='Constantina "Connie" Scoullis' />
+        <script>
+            window.SITE_BASEURL = "{{ site.baseurl }}";
+            console.log(window.SITE_BASEURL)
+        </script>
         <script src="{{ site.baseurl }}/assets/js/index.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/blog.js"></script>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index.css">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
         <title>Constantina "Connie" Scoullis</title>
@@ -23,7 +28,7 @@
     
     {% include header.html %}
 
-    <div class="body-wrapper">
+    <div class="blog-wrapper">
         <div class="blog-post">
             <p class="post-meta">
 
@@ -50,7 +55,29 @@
         <div class="break"></div>
 
         <div class="blog-nav">
-
+            <ul class="blog-nav-links">
+                    <li> 
+                        {% if page.previous.url %}
+                            <a href="{{ site.baseurl }}/{{ page.previous.url}}"> 
+                                previous post
+                            </a>
+                        {% endif %}
+                    </li>
+                    
+                    <li> 
+                        <a href="" id="random-post"> 
+                            random post 
+                        </a>
+                    </li>
+                    
+                    <li>
+                        {% if page.next.url %}
+                            <a href="{{ site.baseurl }}/{{ page.next.url}}"> 
+                                next post 
+                            </a>
+                        {% endif %}
+                    </li>
+            </ul>
         </div>
     </div>
         
