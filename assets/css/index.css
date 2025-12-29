@@ -20,8 +20,8 @@ body.dark-mode {
     color: #ffddaa;
 }
 
-.body-wrapper {
-    width: 740px;
+.body-container {
+    width: 700px;
     margin: 0 auto;
     flex: 1; /* THIS is the magic */
 }
@@ -150,7 +150,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.blog-wrapper {
+.blog-container {
     width: 540px;
     margin: 0 auto;
     flex: 1;
@@ -172,7 +172,7 @@ input:checked + .slider:before {
     display: inline-block;
     font-size: 24px;
 }
-#about-me, .blog-post {
+#about-me, #contact-info, .blog-post {
     margin: 0 auto;
     align-items: center;
     width: 100%;
@@ -183,7 +183,7 @@ input:checked + .slider:before {
     margin-top: 5rem;
 }
 
-#about-me p, .blog-post p {
+#about-me p, #contact-info p, .blog-post p {
     display: block;
     text-align: justify;
     font-size: 20px;
@@ -204,6 +204,11 @@ input:checked + .slider:before {
     border: solid 1px #090909;
     padding: 3px;
     border-radius: 5px;
+}
+
+.blog-card-container {
+    margin-top: 5rem;
+    text-align: left;
 }
 
 footer {
@@ -275,13 +280,13 @@ a:hover {
     text-align:center;
 }
 
-.intro-wrapper {
+.intro-container {
     margin: 0 auto;  
     padding: 25px;
 }
 
 
-.intro-wrapper img {
+.intro-container img {
     width: auto;
     height: 300px;
     border-radius: 100%;
@@ -406,7 +411,7 @@ footer span {
         margin-top: 2.5rem;
     }
     
-    .intro-wrapper {
+    .intro-container {
         margin-top: 5rem;
         line-height: 25px;
     }

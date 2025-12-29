@@ -9,7 +9,7 @@
         />
         <link rel="canonical" href="http://constantina-js.github.io" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content='Constantina "Connie" Scoullis' />
+        <meta property="og:title" content='{{ page.title }}' />
         <meta property="og:description" content='Constantina "Connie" Scoullis' />
         <meta property="og:image" content="img/0.png" />
         <meta property="og:url" content="http://constantina-js.github.io" />
@@ -17,13 +17,13 @@
         <script src="{{ site.baseurl }}/assets/js/index.js"></script>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index.css">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
-        <title>Constantina "Connie" Scoullis</title>
+        <title>{{ page.title }}</title>
     </head>
     <body>
     
         {% include header.html %}
 
-        <div class="body-wrapper">
+        <div class="body-container">
 
             <section id="about-me">
 
@@ -39,3 +39,5 @@
     </body>
 
 {% include footer.html %}
+
+</html>
