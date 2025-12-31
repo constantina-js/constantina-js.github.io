@@ -42,8 +42,10 @@
 
             </p>    
             <div class="post-tags">
-                {% for tag in site.tags %}
-                    <h3 class="tag"> <a href="{{ post.url }}">#{{ tag[0] }}</a></h3>
+                {% for tag in page.tags %}
+                <a href="{{ '/tags/#' | append: tag | slugify | relative_url }}" class="tag">
+                    #{{ tag }}
+                </a>
                 {% endfor %}
             </div>
             <div class="break"></div>

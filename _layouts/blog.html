@@ -34,11 +34,17 @@
                 {% for post in paginator.posts %}
 
                     <article class="blog-card">
-                        <h2>
-                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                        </h2>
+                        <a href="{{ post.url | relative_url }}">
+                            <h2>{{ post.title }}</h2>
+                        </a>
                         <p>{{ post.excerpt }}</p>
                         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                        
+                        <div class="post-tags">
+                            {% for tag in site.tags %}
+                                <a href="{{ post.url }}"><h3 class="tag">#{{ tag[0] }}</h3></a>
+                            {% endfor %}
+                        </div>
                     </article>
             
                     <div class="break"></div>
