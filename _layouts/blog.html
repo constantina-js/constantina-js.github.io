@@ -41,9 +41,12 @@
                         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
                         
                         <div class="post-tags">
-                            {% for tag in site.tags %}
-                                <a href="{{ post.url }}"><h3 class="tag">#{{ tag[0] }}</h3></a>
-                            {% endfor %}
+                        {% for tag in post.tags %}
+                            {% assign tag_string = tag | append: "" %}
+                            <a href="{{ '/tag/' | append: tag_string | relative_url }}">
+                            <h3 class="tag">#{{ tag_string }}</h3>
+                            </a>
+                        {% endfor %}
                         </div>
                     </article>
             
@@ -57,7 +60,7 @@
                         <li> 
                             {% if paginator.previous_page %}
                                 <a href="{{ site.baseurl }}/{{ page.previous.url}}"> 
-                                    previous
+                                    &#8249; previous
                                 </a>
                             {% endif %}
                         </li>
@@ -73,7 +76,7 @@
                         <li>
                             {% if paginator.next_page %}
                                 <a href="{{ site.baseurl }}/{{ page.next.url}}"> 
-                                    next 
+                                    next &#8250;
                                 </a>
                             {% endif %}
                         </li>

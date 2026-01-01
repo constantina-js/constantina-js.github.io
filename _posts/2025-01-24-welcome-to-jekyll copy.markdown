@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll! 2"
 tagline: "Lorem ipsum & shiz"
 date:   2025-01-23 13:15:26 -0800
 categories: jekyll update
-tags: jekyll update
+tags: [jekyll, update]
 permalink: blog/test-slug-2/
 ---
 

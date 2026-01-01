@@ -117,7 +117,7 @@ a:hover {
 }
 
 .blog-card-container {
-  margin-top: 5rem;
+  margin-top: 8rem;
   text-align: left;
 }
 
@@ -247,6 +247,24 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+
+.slider svg {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  transition: transform 0.3s, left 0.3s;
+  position: absolute;
+  left: 7px; 
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--line)
+}
+
+
+input:checked + .slider svg {
+  left: calc(100% - 27px); /* 100% minus icon width + padding */
+}
+
 /* === Sections === */
 
 #about-me, #contact-info, .blog-post {
@@ -257,7 +275,7 @@ input:checked + .slider:before {
 
 .blog-post {
   text-align: justify;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 #about-me p, #contact-info p, .blog-post p {

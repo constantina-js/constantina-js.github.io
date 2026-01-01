@@ -43,7 +43,7 @@
             </p>    
             <div class="post-tags">
                 {% for tag in page.tags %}
-                <a href="{{ '/tags/#' | append: tag | slugify | relative_url }}" class="tag">
+                <a href="{{ '/tag/' | append: tag | relative_url }}" class="tag">
                     #{{ tag }}
                 </a>
                 {% endfor %}
@@ -61,7 +61,7 @@
                     <li> 
                         {% if page.previous.url %}
                             <a href="{{ site.baseurl }}/{{ page.previous.url}}"> 
-                                previous post
+                                &#8249; previous post
                             </a>
                         {% endif %}
                     </li>
@@ -75,7 +75,7 @@
                     <li>
                         {% if page.next.url %}
                             <a href="{{ site.baseurl }}/{{ page.next.url}}"> 
-                                next post 
+                                next post &#8250;
                             </a>
                         {% endif %}
                     </li>
