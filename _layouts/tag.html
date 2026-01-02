@@ -31,6 +31,9 @@
         <div class="blog-card-container">
 
 {% assign current_tag = page.tag | append: "" %}
+          <div class="tag-heading">
+            <h1>tagged: {{ current_tag}}</h1>
+          </div>
 
 {% for post in site.posts %}
   {% if post.tags and post.tags contains current_tag %}
