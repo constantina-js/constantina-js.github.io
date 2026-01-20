@@ -123,7 +123,6 @@ a:hover {
 }
 
 .blog-card-container {
-  margin-top: 8rem;
   text-align: left;
 }
 
@@ -288,7 +287,7 @@ input:checked + .slider svg {
 
 .blog-post {
   text-align: justify;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
 }
 
 #about-me p, .blog-post p {
@@ -400,6 +399,11 @@ footer {
 
   .blog-nav ul li {
     line-height: 36px;
+  }
+
+  .blog-post {
+    margin: 0 auto;
+    width: 70%;
   }
   
   .header-section #propic-area {
