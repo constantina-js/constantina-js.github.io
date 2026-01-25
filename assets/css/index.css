@@ -316,6 +316,7 @@ input:checked + .slider svg {
   letter-spacing: 0.08em;
   background-color: var(--tag-background);
   color: var(--tag-color);
+  margin-right: 10px;
 
 }
 

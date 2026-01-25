@@ -37,7 +37,7 @@
                         <a href="{{ post.url | relative_url }}">
                             <h2>{{ post.title }}</h2>
                         </a>
-                        <p>{{ post.excerpt }}</p>
+                        <p>{{ post.tagline }}</p>
                         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
                         
                         <div class="post-tags">
