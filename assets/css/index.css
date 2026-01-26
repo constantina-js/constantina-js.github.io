@@ -369,7 +369,7 @@ footer {
   .blog-card-container {
     padding: 0rem 2rem 2rem 2rem;
     margin-top: 0;
-    text-align: justify;
+    text-align: left;
   }
 
 
@@ -404,7 +404,8 @@ footer {
 
   .blog-post {
     margin: 0 auto;
-    width: 70%;
+    width: 95%;
+    text-align: left;
   }
   
   .header-section #propic-area {
@@ -423,6 +424,10 @@ footer {
     position: absolute;
     top: 3rem;
     right: 3rem;
+  }
+
+  .tag {
+    margin-right: 5px;
   }
 
   .tag-heading {
