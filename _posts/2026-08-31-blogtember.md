@@ -2,7 +2,7 @@
 layout: post
 title:  "Blogtember - 30 Days of Blogging Anything and Everything"
 tagline: "Because it's time to just...do the damn thing"
-date: 2026-08-31 22:08:00 -0400
+date: 2026-08-31
 categories: blogtember, writing, habits, challenge
 tags: [blogtember, writing, habits, challenge, musings]
 permalink: blog/blogtember/

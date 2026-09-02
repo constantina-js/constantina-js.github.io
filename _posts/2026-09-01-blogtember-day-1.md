@@ -2,7 +2,7 @@
 layout: post
 title:  "Blogtember Day 1"
 tagline: "Starting simple and talking about my unideal start to this"
-date: 2026-09-01 22:08:00 -0400
+date: 2026-09-01
 categories: blogtember, writing, habits, challenge, rambling
 tags: [blogtember, rambling]
 permalink: blog/blogtember-day-one-morning-rush/
