@@ -2,7 +2,7 @@
 layout: post
 title:  "Writing when the World is on Fire"
 tagline: "It's been hard to want to write with **all this** happening"
-date: 2026-03-24 00:01:00 +0000
+date: 2026-03-24
 categories: misc
 tags: [misc]
 permalink: blog/writing-when-the-world-is-on-fire/

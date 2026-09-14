@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World"
 tagline: "New year, new goals, new everything"
-date: 2026-01-25 00:01:00 -0500
+date: 2026-01-25
 categories: musings, introduction
 tags: [musings, firstpost, introduction]
 permalink: blog/hello-world/
